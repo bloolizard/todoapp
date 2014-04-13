@@ -32,6 +32,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+
+# include Twitter Bootstrap
+group :assets do
+	gem 'twitter-bootstrap-rails'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
