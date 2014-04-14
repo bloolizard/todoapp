@@ -3,6 +3,11 @@ class TodoItemsController < ApplicationController
   before_action :find_todo_list
 
   def index
+    #if params[:query].present?
+      #@todo_item = TodoItem.search(params[:query], page: params[:page])
+    #else
+      #@todo_item = TodoItem.all.page params[:page]
+    #end
   end
 
   def new

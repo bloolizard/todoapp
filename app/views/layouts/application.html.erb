@@ -8,15 +8,15 @@
 </head>
 <body>
 
-<div class="nav">
-	<h1><%= link_to "Todo App", root_path %></h1>
-	<ul>
-		<li><%= link_to "Todo Lists", todo_lists_path %></li>
-	</ul>
-	<br class="clear"/>
-</div>
-
 <div class="container">
+
+	<div class="nav">
+
+	<h1><%= link_to "A Simple ToDo App", root_path %></h1>
+	<li><%= link_to "Take me to my lists", todo_lists_path %></li>
+	<br class="clear"/>
+	
+</div>
 	<% flash.each do |type, message|%>
 		<div class="alert flash <%= type %>">
 		<%= message %>
