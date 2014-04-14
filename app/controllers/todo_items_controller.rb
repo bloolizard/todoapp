@@ -51,6 +51,9 @@ class TodoItemsController < ApplicationController
      redirect_to todo_list_todo_items_path, notice: "Todo item marked as complete."
   end
 
+  def search
+    @todo_item = todo_item.search params[:search]
+  end
 
 
   def url_options
